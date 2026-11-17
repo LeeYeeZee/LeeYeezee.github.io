@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="李亿泽的个人主页——专注大模型评测数据基础设施、多模态数据系统与实时分析引擎，字节跳动 Krypton 核心研发。">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Yize Li (李亿泽) | LLM Evaluation Infrastructure & Data Systems">
+  <meta property="og:description" content="大模型评测数据基础设施、多模态数据系统、湖仓一体与实时分析。">
+  <meta property="og:type" content="website">
+  <title>Yize Li (李亿泽) | LLM Evaluation Infrastructure & Data Systems</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "李亿泽",
+      "alternateName": "Yize Li",
+      "jobTitle": "Database Engineer",
+      "email": "mailto:yizeli1212@163.com",
+      "alumniOf": ["康奈尔大学", "重庆大学"],
+      "sameAs": ["https://github.com/LeeYeeZee"]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+
+  <header class="top-nav">
+    <nav class="page-width nav-inner" aria-label="主导航">
+      <div class="nav-links">
+        <a href="#experience">经历</a>
+        <a href="#publications">论文</a>
+        <a href="#projects">开源项目</a>
+        <a href="https://github.com/LeeYeeZee" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="mailto:yizeli1212@163.com">Email <span aria-hidden="true">↗</span></a>
+      </div>
+      <label class="theme-control">
+        <span class="sr-only">页面主题</span>
+        <select id="theme-select" aria-label="页面主题">
+          <option value="system">系统</option>
+          <option value="light">浅色</option>
+          <option value="dark">深色</option>
+        </select>
+      </label>
+    </nav>
+  </header>
+
+  <main class="page-width main-content" id="main">
+    <header class="profile-heading">
+      <h1>Yize Li <span>李亿泽</span></h1>
+      <p class="role-line">大模型评测数据基础设施 · 实时分析系统 · <strong>字节跳动</strong></p>
+      <p class="role-line">Krypton 核心研发 · Seed Merlin 模型评估与数据预览平台建设</p>
+      <p class="role-line">曾任 AliExpress 特征平台技术负责人 · 蚂蚁集团 GeaBase / LedgerDB 核心成员</p>
+      <p class="research-line">LLM Evaluation · Multimodal Data · Data Infrastructure · HSAP · Lakehouse · Real-time Analytics</p>
+    </header>
+
+    <section class="about" id="about" aria-label="个人简介">
+      <figure class="profile-figure">
+        <div class="portrait-placeholder" role="img" aria-label="个人照片占位"></div>
+        <figcaption>LLM Evaluation · Multimodal Data Infra</figcaption>
+        <div class="profile-links">
+          <a href="https://github.com/LeeYeeZee" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:yizeli1212@163.com">Email</a>
+        </div>
+      </figure>
+
+      <p>我目前就职于 <strong>字节跳动 Data 基础设施</strong>，是新一代实时服务分析系统 <strong>Krypton</strong> 的核心研发。当前工作聚焦于为 <strong>Seed foundation 团队</strong>建设大模型评测与数据预览基础设施，依托 <strong>Merlin 模型评估平台</strong>，将多模态数据管理、离在线融合查询与实时分析能力整合为统一的评测数据底座。</p>
+
+      <p>在我看来，一套可规模化的大模型评测体系，既需要科学的指标与任务设计，也需要坚实的数据工程支撑。我重点关注后者：如何统一组织<strong>训练数据、人工标注、模型输出与评估结果</strong>，如何高效连接文本、标签、Embedding、Logits、图像、视频和音频等多模态数据，并通过稳定、低延迟的查询能力，让评测数据真正可查、可分析、可持续迭代。</p>
+
+      <p>围绕这一目标，我从无到有推进 <strong>Krypton 湖仓一体架构</strong>的设计与落地，通过 External Catalog 连接 ES、Iceberg、Hive 等异构数据源，打通多源数据的读写与查询链路，支撑 Merlin 平台达到 <strong>99.98% 生产集群 SLA</strong>。同时，我设计并实现了行列混存的数据读写架构，在 TPC-DS 数据集上取得 <strong>230% 性能提升</strong>，在 2000+ 列大宽表场景下取得 <strong>500% 性能提升</strong>，为大规模评测数据的交互式预览与复杂分析提供性能基础。</p>
+
+      <p>此前，我在 <strong>阿里巴巴 AliExpress</strong> 担任特征平台技术负责人，建设覆盖特征开发、管理与在线服务的一体化平台，将特征查询类应用从七个整合为一个，并节省 <strong>50% 特征生产与同步的 DA 人力投入</strong>。平台也通过统一的数据资产共享，减少了跨业务领域的重复建设。</p>
+
+      <p>在蚂蚁集团期间，我作为创始团队成员参与 <strong>LedgerDB</strong> 与 <strong>GeaBase</strong> 的研发。LedgerDB 融合区块链的可验证性与中心化系统的高性能，单账本实现 <strong>30 万 TPS</strong>，存证性能达到 Hyperledger Fabric 的 <strong>80 倍以上</strong>，相关成果发表于 VLDB 2020。GeaBase 则支撑支付宝风控、社交、蚂蚁森林与新春五福等核心场景；新春活动期间，核心链路达到秒级 200 万次以上写入与 100 万次以上一度图查询。</p>
+
+      <p>我于 <strong>康奈尔大学</strong>获得电子及计算机工程硕士学位，本科就读于 <strong>重庆大学</strong>自动化专业。截至目前，我已发表 <strong>3 篇学术论文与 61 项专利</strong>。工作之外，我持续探索 AI 辅助开发，将 LLM 应用于数据格式、代码内容生成与音乐创作。</p>
+    </section>
+
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">开源项目与近期动态</h2>
+      <div class="inline-links">
+        <a href="https://github.com/LeeYeeZee/jlance" target="_blank" rel="noopener noreferrer">jlance</a>
+        <a href="https://github.com/LeeYeeZee/code_listener" target="_blank" rel="noopener noreferrer">code_listener</a>
+        <a href="https://github.com/LeeYeeZee/book_recommender" target="_blank" rel="noopener noreferrer">AI Music Lab</a>
+      </div>
+      <ul class="news-list">
+        <li>
+          <time datetime="2026-04">2026.04</time>
+          <p>开源 <a href="https://github.com/LeeYeeZee/jlance" target="_blank" rel="noopener noreferrer">jlance</a>：Lance Format Java 原生 Reader，采用自底向上的逐层实现方式，支持 Lance v2.0 与 v2.1 格式数据读取。</p>
+        </li>
+        <li>
+          <time datetime="2026-04">2026.04</time>
+          <p>构建 <a href="https://github.com/LeeYeeZee/code_listener" target="_blank" rel="noopener noreferrer">code_listener</a>：基于 LLM 的代码理解与内容生成流水线，串联代码扫描、Storyboard、Mermaid、TTS 与 FFmpeg，自动生成源码讲解视频。</p>
+        </li>
+        <li>
+          <time datetime="2026-04">2026.04</time>
+          <p>启动 <a href="https://github.com/LeeYeeZee/book_recommender" target="_blank" rel="noopener noreferrer">AI Music Lab</a>：以网络文学作品为灵感，通过 LLM 辅助词曲创作，已全平台发布 39 首单曲。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-section" id="publications" aria-labelledby="publications-title">
+      <h2 class="section-title" id="publications-title">精选论文</h2>
+      <ol class="publication-list">
+        <li>
+          <span class="publication-number">01</span>
+          <div>
+            <h3>LedgerDB: A Centralized Ledger Database for Universal Audit and Verification</h3>
+            <p class="publication-meta"><strong>VLDB 2020</strong> · 可信账本数据库</p>
+          </div>
+        </li>
+        <li>
+          <span class="publication-number">02</span>
+          <div>
+            <h3>A High-Performance Distributed Graph Database</h3>
+            <p class="publication-meta"><strong>ACM, IJHPCN 2018</strong> · 分布式图数据库</p>
+          </div>
+        </li>
+        <li>
+          <span class="publication-number">03</span>
+          <div>
+            <h3>GeaBase: A High-Performance Distributed Graph Database for Industry-Scale Applications</h3>
+            <p class="publication-meta"><strong>IEEE, CBD 2017</strong> · 工业级图数据库</p>
+          </div>
+        </li>
+      </ol>
+      <p class="patent-note">此外，在账本数据库、图数据库与数据系统方向已发表 <strong>61 项专利</strong>，其中 LedgerDB 相关专利超过 60 项，已授权 20 项。</p>
+    </section>
+
+    <section class="content-section" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title" id="experience-title">工作经历</h2>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="company-mark"><img src="assets/logos/bytedance.png" alt="" loading="lazy"></div>
+          <div><h3>字节跳动</h3><p>Data 基础设施 · Krypton 核心研发</p></div>
+          <time>2022.08 — 至今</time>
+        </article>
+        <article class="experience-item">
+          <div class="company-mark"><img src="assets/logos/alibaba.png" alt="" loading="lazy"></div>
+          <div><h3>阿里巴巴 · AliExpress</h3><p>数据智能部 · 特征平台技术负责人</p></div>
+          <time>2020.12 — 2022.08</time>
+        </article>
+        <article class="experience-item">
+          <div class="company-mark"><img src="assets/logos/ant-group.svg" alt="" loading="lazy"></div>
+          <div><h3>蚂蚁集团</h3><p>LedgerDB 创始成员 · 核心研发与产品化负责人</p></div>
+          <time>2019.01 — 2020.11</time>
+        </article>
+        <article class="experience-item">
+          <div class="company-mark"><img src="assets/logos/ant-group.svg" alt="" loading="lazy"></div>
+          <div><h3>蚂蚁集团</h3><p>GeaBase 创始团队成员 · 社交场景业务负责人</p></div>
+          <time>2015.09 — 2018.12</time>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section education-section" aria-labelledby="education-title">
+      <h2 class="section-title" id="education-title">教育背景</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <div class="education-logo"><img class="university-seal" src="assets/logos/cornell-seal.svg" alt="康奈尔大学校徽" loading="lazy"></div>
+          <div class="education-details"><strong>康奈尔大学</strong><span>电子及计算机工程 · 硕士</span></div>
+          <time>2013.09 — 2015.02</time>
+        </div>
+        <div class="education-item">
+          <div class="education-logo"><img src="assets/logos/cqu.png" alt="重庆大学校徽" loading="lazy"></div>
+          <div class="education-details"><strong>重庆大学</strong><span>自动化 · 学士</span></div>
+          <time>2009.09 — 2013.07</time>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <p>© <span id="current-year">2026</span> Yize Li. All rights reserved.</p>
+      <a href="#main">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
