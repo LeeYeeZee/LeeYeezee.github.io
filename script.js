@@ -11,7 +11,7 @@ function applyTheme(theme) {
   }
 
   const isDark = theme === 'dark' || (theme === 'system' && systemTheme.matches);
-  document.querySelector('meta[name="theme-color"]').setAttribute('content', isDark ? '#171918' : '#ffffff');
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', isDark ? '#151917' : '#f5f6f2');
 }
 
 themeSelect.value = storedTheme;

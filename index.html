@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Yize Li's personal homepage — LLM evaluation data infrastructure, multimodal data systems, and real-time analytics. Core engineer on ByteDance's Krypton engine.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f6f2">
   <meta property="og:title" content="Yize Li (李亿泽) | LLM Evaluation Infrastructure & Data Systems">
   <meta property="og:description" content="LLM evaluation data infrastructure, multimodal data systems, lakehouse architecture, and real-time analytics.">
   <meta property="og:type" content="website">
@@ -29,145 +29,172 @@
 
   <header class="top-nav">
     <nav class="page-width nav-inner" aria-label="Main navigation">
-      <div class="nav-links">
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Open Source</a>
-        <a href="https://github.com/LeeYeeZee" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <a href="mailto:yizeli1212@163.com">Email <span aria-hidden="true">↗</span></a>
+      <a class="site-brand" href="#main" aria-label="Yize Li home">
+        <span class="brand-monogram">YL</span>
+        <span class="brand-copy">Yize Li<small>Data Systems · AI Infra</small></span>
+      </a>
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Open Source</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="https://github.com/LeeYeeZee" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+        <label class="theme-control">
+          <span class="sr-only">Color theme</span>
+          <select id="theme-select" aria-label="Color theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </label>
       </div>
-      <label class="theme-control">
-        <span class="sr-only">Color theme</span>
-        <select id="theme-select" aria-label="Color theme">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </label>
     </nav>
   </header>
 
   <main class="page-width main-content" id="main">
     <header class="profile-heading">
-      <h1>Yize Li <span>李亿泽</span></h1>
-      <p class="role-line">LLM Evaluation Data Infrastructure · Real-time Analytics · <strong>ByteDance</strong></p>
-      <p class="role-line">Core Engineer, Krypton · Building the Seed Merlin Model Evaluation & Data Preview Platform</p>
-      <p class="role-line">Former Technical Lead of the AliExpress Feature Platform · Founding Member of Ant Group's GeaBase & LedgerDB</p>
-      <p class="research-line">LLM Evaluation · Multimodal Data · Data Infrastructure · HSAP · Lakehouse · Real-time Analytics</p>
-    </header>
-
-    <section class="about" id="about" aria-label="About">
+      <div class="profile-copy">
+        <p class="profile-kicker">DATABASE SYSTEMS × LLM EVALUATION</p>
+        <h1>Yize Li <span>李亿泽</span></h1>
+        <p class="profile-lead">Building the data foundation for<br> large-scale model evaluation.</p>
+        <p class="role-line">LLM Evaluation Data Infrastructure · Real-time Analytics · <strong>ByteDance</strong></p>
+        <p class="role-line">Core Engineer, Krypton · Seed Merlin Model Evaluation & Data Preview Platform</p>
+        <p class="research-line">Multimodal Data · Data Infrastructure · HSAP · Lakehouse · Real-time Analytics</p>
+      </div>
       <figure class="profile-figure">
         <div class="profile-photo"><img src="assets/yizeli.jpg" alt="Yize Li speaking at a technical presentation" width="1000" height="1000" fetchpriority="high"></div>
-        <figcaption>LLM Evaluation · Multimodal Data Infra</figcaption>
-        <div class="profile-links">
-          <a href="https://github.com/LeeYeeZee" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="mailto:yizeli1212@163.com">Email</a>
-        </div>
+        <figcaption>
+          <span>Core Engineer · ByteDance</span>
+          <div class="profile-links">
+            <a href="https://github.com/LeeYeeZee" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:yizeli1212@163.com">Email</a>
+          </div>
+        </figcaption>
       </figure>
+    </header>
 
-      <p>I am currently a core engineer on <strong>Krypton</strong>, a next-generation real-time serving and analytics system within <strong>ByteDance's Data Infrastructure organization</strong>. My work focuses on building LLM evaluation and data preview infrastructure for the <strong>Seed Foundation team</strong>. Through the <strong>Merlin model evaluation platform</strong>, I bring multimodal data management, unified offline-online queries, and real-time analytics together in a unified evaluation data foundation.</p>
+    <div class="profile-stats" aria-label="Career highlights">
+      <div><strong>10<sup>+</sup></strong><span>Years in data systems</span></div>
+      <div><strong>61</strong><span>Published patents</span></div>
+      <div><strong>300K</strong><span>Peak ledger TPS</span></div>
+    </div>
 
-      <p>I believe a scalable LLM evaluation system requires not only well-designed metrics and benchmarks, but also a strong data engineering foundation. My focus is on the latter: unifying <strong>training data, human annotations, model outputs, and evaluation results</strong>; connecting multimodal data spanning text, labels, embeddings, logits, images, video, and audio; and providing stable, low-latency queries that make evaluation data accessible, analyzable, and ready for continuous iteration.</p>
+    <section class="content-section about" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title" data-number="01">About</h2>
+      <div class="section-body">
+        <p>I am currently a core engineer on <strong>Krypton</strong>, a next-generation real-time serving and analytics system within <strong>ByteDance's Data Infrastructure organization</strong>. My work focuses on building LLM evaluation and data preview infrastructure for the <strong>Seed Foundation team</strong>. Through the <strong>Merlin model evaluation platform</strong>, I bring multimodal data management, unified offline-online queries, and real-time analytics together in a unified evaluation data foundation.</p>
 
-      <p>To support this goal, I designed and built <strong>Krypton's lakehouse architecture</strong> from the ground up. Its External Catalog connects heterogeneous sources including Elasticsearch, Apache Iceberg, and Hive, enabling unified reads, writes, and queries across multimodal datasets while supporting a <strong>99.98% production SLA</strong> for Merlin. I also designed a hybrid row-column storage format and adaptive read path, achieving a <strong>230% performance improvement on TPC-DS</strong> and a <strong>500% improvement on tables with more than 2,000 columns</strong>, providing the performance foundation for interactive exploration and complex analysis of large-scale evaluation data.</p>
+        <p>I believe a scalable LLM evaluation system requires not only well-designed metrics and benchmarks, but also a strong data engineering foundation. My focus is on the latter: unifying <strong>training data, human annotations, model outputs, and evaluation results</strong>; connecting multimodal data spanning text, labels, embeddings, logits, images, video, and audio; and providing stable, low-latency queries that make evaluation data accessible, analyzable, and ready for continuous iteration.</p>
 
-      <p>Previously, I was the technical lead for the <strong>Alibaba AliExpress Feature Platform</strong>, where I built an integrated platform covering feature development, management, and online serving. I consolidated seven feature-query applications into one and <strong>reduced the feature production and synchronization workload for data analysts by 50%</strong>. The platform also enabled shared data assets across business domains, reducing duplicated feature development.</p>
+        <p>To support this goal, I designed and built <strong>Krypton's lakehouse architecture</strong> from the ground up. Its External Catalog connects heterogeneous sources including Elasticsearch, Apache Iceberg, and Hive, enabling unified reads, writes, and queries across multimodal datasets while supporting a <strong>99.98% production SLA</strong> for Merlin. I also designed a hybrid row-column storage format and adaptive read path, achieving a <strong>230% performance improvement on TPC-DS</strong> and a <strong>500% improvement on tables with more than 2,000 columns</strong>, providing the performance foundation for interactive exploration and complex analysis of large-scale evaluation data.</p>
 
-      <p>At Ant Group, I was a founding member of both <strong>LedgerDB</strong> and <strong>GeaBase</strong>. LedgerDB combined blockchain-grade verifiability with the performance of centralized systems, achieving <strong>300,000 TPS per ledger</strong> and more than <strong>80× the attestation-write performance of Hyperledger Fabric</strong>. This work was published at VLDB 2020. GeaBase powered Alipay's risk control, social features, Ant Forest, and the Chinese New Year Five Fortunes campaign. During the campaign, its core path sustained more than <strong>2 million writes and 1 million one-hop graph queries per second</strong>.</p>
+        <p>Previously, I was the technical lead for the <strong>Alibaba AliExpress Feature Platform</strong>, where I built an integrated platform covering feature development, management, and online serving. I consolidated seven feature-query applications into one and <strong>reduced the feature production and synchronization workload for data analysts by 50%</strong>. The platform also enabled shared data assets across business domains, reducing duplicated feature development.</p>
 
-      <p>I hold a master's degree in Electrical and Computer Engineering from <strong>Cornell University</strong> and a bachelor's degree in Automation from <strong>Chongqing University</strong>. To date, I have published <strong>3 academic papers and 61 patents</strong>. Outside my core work, I explore AI-assisted development, applying LLMs to data formats, code understanding, content generation, and music creation.</p>
+        <p>At Ant Group, I was a founding member of both <strong>LedgerDB</strong> and <strong>GeaBase</strong>. LedgerDB combined blockchain-grade verifiability with the performance of centralized systems, achieving <strong>300,000 TPS per ledger</strong> and more than <strong>80× the attestation-write performance of Hyperledger Fabric</strong>. This work was published at VLDB 2020. GeaBase powered Alipay's risk control, social features, Ant Forest, and the Chinese New Year Five Fortunes campaign. During the campaign, its core path sustained more than <strong>2 million writes and 1 million one-hop graph queries per second</strong>.</p>
+
+        <p>I hold a master's degree in Electrical and Computer Engineering from <strong>Cornell University</strong> and a bachelor's degree in Automation from <strong>Chongqing University</strong>. Outside my core work, I explore AI-assisted development, applying LLMs to data formats, code understanding, content generation, and music creation.</p>
+      </div>
     </section>
 
     <section class="content-section" id="projects" aria-labelledby="projects-title">
-      <h2 class="section-title" id="projects-title">Open Source & Recent Updates</h2>
-      <div class="inline-links">
-        <a href="https://github.com/LeeYeeZee/jlance" target="_blank" rel="noopener noreferrer">jlance</a>
-        <a href="https://github.com/LeeYeeZee/code_listener" target="_blank" rel="noopener noreferrer">code_listener</a>
-        <a href="https://github.com/LeeYeeZee/book_recommender" target="_blank" rel="noopener noreferrer">AI Music Lab</a>
+      <h2 class="section-title" id="projects-title" data-number="02">Open Source</h2>
+      <div class="section-body">
+        <div class="inline-links">
+          <a href="https://github.com/LeeYeeZee/jlance" target="_blank" rel="noopener noreferrer">jlance ↗</a>
+          <a href="https://github.com/LeeYeeZee/code_listener" target="_blank" rel="noopener noreferrer">code_listener ↗</a>
+          <a href="https://github.com/LeeYeeZee/book_recommender" target="_blank" rel="noopener noreferrer">AI Music Lab ↗</a>
+        </div>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-04">2026.04</time>
+            <p>Released <a href="https://github.com/LeeYeeZee/jlance" target="_blank" rel="noopener noreferrer">jlance</a>, a native Java reader for the Lance format. Built layer by layer from the ground up, it supports reading Lance v2.0 and v2.1 data.</p>
+          </li>
+          <li>
+            <time datetime="2026-04">2026.04</time>
+            <p>Built <a href="https://github.com/LeeYeeZee/code_listener" target="_blank" rel="noopener noreferrer">code_listener</a>, an LLM-powered code understanding and content generation pipeline that combines repository analysis, storyboarding, Mermaid, TTS, and FFmpeg to automatically produce source-code walkthrough videos.</p>
+          </li>
+          <li>
+            <time datetime="2026-04">2026.04</time>
+            <p>Launched <a href="https://github.com/LeeYeeZee/book_recommender" target="_blank" rel="noopener noreferrer">AI Music Lab</a>, using LLMs to turn literary inspiration into lyrics and music, with 39 singles released across major platforms.</p>
+          </li>
+        </ul>
       </div>
-      <ul class="news-list">
-        <li>
-          <time datetime="2026-04">2026.04</time>
-          <p>Released <a href="https://github.com/LeeYeeZee/jlance" target="_blank" rel="noopener noreferrer">jlance</a>, a native Java reader for the Lance format. Built layer by layer from the ground up, it supports reading Lance v2.0 and v2.1 data.</p>
-        </li>
-        <li>
-          <time datetime="2026-04">2026.04</time>
-          <p>Built <a href="https://github.com/LeeYeeZee/code_listener" target="_blank" rel="noopener noreferrer">code_listener</a>, an LLM-powered code understanding and content generation pipeline that combines repository analysis, storyboarding, Mermaid, TTS, and FFmpeg to automatically produce source-code walkthrough videos.</p>
-        </li>
-        <li>
-          <time datetime="2026-04">2026.04</time>
-          <p>Launched <a href="https://github.com/LeeYeeZee/book_recommender" target="_blank" rel="noopener noreferrer">AI Music Lab</a>, using LLMs to turn literary inspiration into lyrics and music, with 39 singles released across major platforms.</p>
-        </li>
-      </ul>
     </section>
 
     <section class="content-section" id="publications" aria-labelledby="publications-title">
-      <h2 class="section-title" id="publications-title">Selected Publications</h2>
-      <ol class="publication-list">
-        <li>
-          <span class="publication-number">01</span>
-          <div>
-            <h3>LedgerDB: A Centralized Ledger Database for Universal Audit and Verification</h3>
-            <p class="publication-meta"><strong>VLDB 2020</strong> · Trusted ledger database</p>
-          </div>
-        </li>
-        <li>
-          <span class="publication-number">02</span>
-          <div>
-            <h3>A High-Performance Distributed Graph Database</h3>
-            <p class="publication-meta"><strong>ACM, IJHPCN 2018</strong> · Distributed graph database</p>
-          </div>
-        </li>
-        <li>
-          <span class="publication-number">03</span>
-          <div>
-            <h3>GeaBase: A High-Performance Distributed Graph Database for Industry-Scale Applications</h3>
-            <p class="publication-meta"><strong>IEEE, CBD 2017</strong> · Industrial-scale graph systems</p>
-          </div>
-        </li>
-      </ol>
-      <p class="patent-note">I have also published <strong>61 patents</strong> across ledger databases, graph databases, and data systems, including more than 60 related to LedgerDB, 20 of which have been granted.</p>
+      <h2 class="section-title" id="publications-title" data-number="03">Publications</h2>
+      <div class="section-body">
+        <ol class="publication-list">
+          <li>
+            <span class="publication-number">01</span>
+            <div>
+              <h3>LedgerDB: A Centralized Ledger Database for Universal Audit and Verification</h3>
+              <p class="publication-meta"><strong>VLDB 2020</strong> · Trusted ledger database</p>
+            </div>
+          </li>
+          <li>
+            <span class="publication-number">02</span>
+            <div>
+              <h3>A High-Performance Distributed Graph Database</h3>
+              <p class="publication-meta"><strong>ACM, IJHPCN 2018</strong> · Distributed graph database</p>
+            </div>
+          </li>
+          <li>
+            <span class="publication-number">03</span>
+            <div>
+              <h3>GeaBase: A High-Performance Distributed Graph Database for Industry-Scale Applications</h3>
+              <p class="publication-meta"><strong>IEEE, CBD 2017</strong> · Industrial-scale graph systems</p>
+            </div>
+          </li>
+        </ol>
+        <p class="patent-note">61 published patents across ledger databases, graph databases, and data systems, including more than 60 related to LedgerDB, 20 of which have been granted.</p>
+      </div>
     </section>
 
     <section class="content-section" id="experience" aria-labelledby="experience-title">
-      <h2 class="section-title" id="experience-title">Experience</h2>
-      <div class="experience-list">
-        <article class="experience-item">
-          <div class="company-mark"><img src="assets/logos/bytedance.png" alt="" loading="lazy"></div>
-          <div><h3>ByteDance</h3><p>Data Infrastructure · Core Engineer, Krypton</p></div>
-          <time>2022.08 — Present</time>
-        </article>
-        <article class="experience-item">
-          <div class="company-mark"><img src="assets/logos/alibaba.png" alt="" loading="lazy"></div>
-          <div><h3>Alibaba · AliExpress</h3><p>Data Intelligence · Technical Lead, Feature Platform</p></div>
-          <time>2020.12 — 2022.08</time>
-        </article>
-        <article class="experience-item">
-          <div class="company-mark"><img src="assets/logos/ant-group.svg" alt="" loading="lazy"></div>
-          <div><h3>Ant Group</h3><p>Founding Member, LedgerDB · Core R&D and Productization Lead</p></div>
-          <time>2019.01 — 2020.11</time>
-        </article>
-        <article class="experience-item">
-          <div class="company-mark"><img src="assets/logos/ant-group.svg" alt="" loading="lazy"></div>
-          <div><h3>Ant Group</h3><p>Founding Member, GeaBase · Technical Lead for Social Applications</p></div>
-          <time>2015.09 — 2018.12</time>
-        </article>
+      <h2 class="section-title" id="experience-title" data-number="04">Experience</h2>
+      <div class="section-body">
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="company-mark"><img src="assets/logos/bytedance.png" alt="" loading="lazy"></div>
+            <div><h3>ByteDance</h3><p>Data Infrastructure · Core Engineer, Krypton</p></div>
+            <time>2022.08 — Present</time>
+          </article>
+          <article class="experience-item">
+            <div class="company-mark"><img src="assets/logos/alibaba.png" alt="" loading="lazy"></div>
+            <div><h3>Alibaba · AliExpress</h3><p>Data Intelligence · Technical Lead, Feature Platform</p></div>
+            <time>2020.12 — 2022.08</time>
+          </article>
+          <article class="experience-item">
+            <div class="company-mark"><img src="assets/logos/ant-group.svg" alt="" loading="lazy"></div>
+            <div><h3>Ant Group</h3><p>Founding Member, LedgerDB · Core R&D and Productization Lead</p></div>
+            <time>2019.01 — 2020.11</time>
+          </article>
+          <article class="experience-item">
+            <div class="company-mark"><img src="assets/logos/ant-group.svg" alt="" loading="lazy"></div>
+            <div><h3>Ant Group</h3><p>Founding Member, GeaBase · Technical Lead for Social Applications</p></div>
+            <time>2015.09 — 2018.12</time>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="content-section education-section" aria-labelledby="education-title">
-      <h2 class="section-title" id="education-title">Education</h2>
-      <div class="education-list">
-        <div class="education-item">
-          <div class="education-logo"><img class="university-seal" src="assets/logos/cornell-seal.svg" alt="Cornell University seal" loading="lazy"></div>
-          <div class="education-details"><strong>Cornell University</strong><span>Electrical and Computer Engineering · Master's Degree</span></div>
-          <time>2013.09 — 2015.02</time>
-        </div>
-        <div class="education-item">
-          <div class="education-logo"><img src="assets/logos/cqu.png" alt="Chongqing University emblem" loading="lazy"></div>
-          <div class="education-details"><strong>Chongqing University</strong><span>Automation · Bachelor's Degree</span></div>
-          <time>2009.09 — 2013.07</time>
+      <h2 class="section-title" id="education-title" data-number="05">Education</h2>
+      <div class="section-body">
+        <div class="education-list">
+          <div class="education-item">
+            <div class="education-logo"><img class="university-seal" src="assets/logos/cornell-seal.svg" alt="Cornell University seal" loading="lazy"></div>
+            <div class="education-details"><strong>Cornell University</strong><span>Electrical and Computer Engineering · Master's Degree</span></div>
+            <time>2013.09 — 2015.02</time>
+          </div>
+          <div class="education-item">
+            <div class="education-logo"><img src="assets/logos/cqu.png" alt="Chongqing University emblem" loading="lazy"></div>
+            <div class="education-details"><strong>Chongqing University</strong><span>Automation · Bachelor's Degree</span></div>
+            <time>2009.09 — 2013.07</time>
+          </div>
         </div>
       </div>
     </section>
